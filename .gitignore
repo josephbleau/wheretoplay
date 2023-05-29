@@ -50,6 +50,3 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 gradle/
-gradlew
-gradlew.bat
-settings.gradle
