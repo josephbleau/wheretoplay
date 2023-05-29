@@ -1,0 +1,23 @@
+language: java
+jdk:
+  - openjdk17
+
+before_install:
+  - chmod +x gradlew
+
+install: true
+
+script:
+  - ./gradlew build
+
+cache:
+  directories:
+    - $HOME/.m2
+    - $HOME/.gradle
+
+notifications:
+  email:
+    recipients:
+      - jbleau+travisci@gmail.com
+    on_success: never
+    on_failure: always
